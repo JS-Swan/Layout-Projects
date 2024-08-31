@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background: #a70000;
+}
+nav{
+    background: #5e0808;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 1px 5px 3px rgba(0,0,0,0.1);
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    /* padding: 36px 16px; */
+    padding: 0 24px;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 93px;
+}
+.left-nav{
+    display: flex;
+    max-width: 450px;
+    height: 40px;
+    width: 100%;
+    gap: 10px;
+}
+.logo{
+    height: 40px;
+    /* width: 100%; */
+   min-width: 160px;
+    background: #ff0000;
+}
+.links{
+    height: 40px;
+    width: 100%;
+    background: #ff0000;
+    border-radius: 2px;
+}
+.avatar{
+    height: 64px;
+    width: 64px;
+    background: #ff0000;
+    border-radius: 100%;
+}
+main{
+    padding-top: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+/* Card */
+.card{
+    background: pink;
+    padding: 24px;
+   
+   border-radius: 12px;
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
+.circle{
+    height: 100px;
+    width: 100px;
+    /* min-width: 100px; */
+    /* make circle not srink  */
+    background: #ff0000;
+    border-radius: 100%;
+}
+.line{
+    height: 24px;
+    width: 100%;
+    background: #5e0808;
+}
+.line-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.pad{
+    padding: 24px;
+}
+/* Responsive Mobile*/
+@media screen and (width < 600px){
+    .left-nav{
+        max-width: 250px;
+    }
+    .logo{
+       min-width: 60px;
+    }
+    .avatar{
+      height: 50px;
+      width: 50px;
+    }
+
+    .card{
+        padding: 16px;
+         gap: 15px;
+    }
+    .circle{
+        height: 70px;
+        width: 70px;
+    }
+    .line{
+        height: 16px;
+    }
+    .line-container{
+
+        gap: 10px;
+    }
+}
